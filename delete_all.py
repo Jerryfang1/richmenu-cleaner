@@ -16,7 +16,7 @@ def delete_all_rich_menus_and_aliases():
         line_bot_api = MessagingApi(api_client)
 
         # 刪除所有 Rich Menu
-        rich_menus = line_bot_api.get_rich_menu_list().richmenus
+        richmenus = line_bot_api.get_rich_menu_list().richmenus
         print(f"找到 {len(rich_menus)} 個 Rich Menu")
         for rm in richmenus:
             print(f"刪除：{rm.rich_menu_id}")
