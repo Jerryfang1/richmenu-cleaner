@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: worker
     name: richmenu-cleaner
     env: python
     buildCommand: ""
